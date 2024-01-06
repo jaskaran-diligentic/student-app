@@ -1,0 +1,18 @@
+{
+	"NOT_AUTHORIZED_TO_ACCESS": "You are not authorised to access this page.",
+  "MAX_LOGIN_DEVICES_REACHED":
+    "You can have only 5 devices logged in. Log out from other devices to continue.",
+  "PARAMETER_MISSING":
+    "Insufficient information was supplied. Please check and try again.",
+  "NO_ACCESS_TOKEN_PROVIDED": "Please provide an access token.",
+  "INVALID_ACCESS_TOKEN": "Session expired. Please login again.",
+  "INVALID_CREDENTIALS": "Invalid credentials.",
+  "ACTION_COMPLETE": "Successful",
+  "NO_DATA_FOUND": "No data found.",
+  "ERROR_IN_EXECUTION": "Some error occurred while executing. Please refresh the page and try again.",
+  "NOT_A_VALID_FILE": "This file is not supported.",
+  "PLEASE_PROVIDE_A_FILE": "Please provide a file to upload",
+  "SIZE_EXCEEDS": "Max allowed file size is 10 MB",
+  "USER_ALREADY_EXISTS": "User already exists.",
+  "NOT_VALID_DOCUMENT_ID": "Document id is not valid. Please provide valid document Id."
+}

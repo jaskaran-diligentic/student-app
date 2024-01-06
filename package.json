@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.41.1",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "i18n": "^0.15.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.2",
+    "passport": "^0.5.3",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "student-project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
