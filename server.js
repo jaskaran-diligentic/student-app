@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const i18n = require('i18n');
-const https = require('https');
+const http = require('http');
 const helmet = require('helmet');
 const express = require('express');
 const mongoose = require('mongoose');
@@ -11,7 +11,6 @@ const studentRouter = require('./routes/student.router');
 
 require('dotenv').config();
 
-const PORT = 8000;
 
 i18n.configure({
     locales: ['en'],
@@ -21,6 +20,7 @@ i18n.configure({
 
 // init middleware & creating a server.
 const app = express();
+const server = http.createServer(app)
 app.use(i18n.init);
 app.use(helmet());
 app.use(express.json());
@@ -29,12 +29,11 @@ app.use(express.json());
 app.use('/api/students', studentRouter);
 
 async function startServer() {
+    
     await mongoose.connect(process.env.MONGODB_URI);
-    https.createServer({
-        key: fs.readFileSync('key.pem'),
-        cert: fs.readFileSync('cert.pem')
-    }, app).listen(PORT, () => {
-        console.log(`Listing on PORT ${PORT}`);
+
+    server.listen(process.env.PORT, () => {
+        console.log(`Listing on PORT ${process.env.PORT}`);
     });
 
 }
